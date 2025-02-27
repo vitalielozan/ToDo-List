@@ -8,6 +8,6 @@
 
 ##Technology
 
--HTML
--CSS
--JAVACRIPT
+- HTML
+- CSS
+- JAVACRIPT
