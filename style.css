@@ -15,7 +15,8 @@ body {
   padding: 15px;
   border-radius: 12px;
   box-shadow: 5px 10px 20px #888888;
-  width: 500px;
+  width: 50%;
+  height: auto;
   text-align: center;
 }
 
@@ -54,14 +55,13 @@ li {
 }
 
 li i {
-  font-size: 55px;
   background: #94101b;
   border: none;
   color: white;
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
 }
 

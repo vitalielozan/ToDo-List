@@ -14,12 +14,13 @@ btnaddTask.addEventListener('click', () => {
 
   const taskList = document.querySelector('#taskList');
   const li = document.createElement('li');
-  li.textContent = `${taskText} :   ${taskDate}`;
+  taskList.appendChild(li);
+  li.textContent = `${taskText}   -   ${taskDate}`;
   li.setAttribute('class', 'my-3 bg-success text-white');
 
   const btnDelete = document.createElement('i');
+  li.appendChild(btnDelete);
   btnDelete.setAttribute('class', 'bi bi-trash3-fill');
-
   btnDelete.addEventListener('click', () => {
     taskList.removeChild(li);
   });
@@ -27,9 +28,6 @@ btnaddTask.addEventListener('click', () => {
   li.addEventListener('click', () => {
     li.classList.toggle('completed');
   });
-
-  li.appendChild(btnDelete);
-  taskList.appendChild(li);
 
   taskInput.value = '';
   taskInputDate.value = '';
